@@ -1,10 +1,14 @@
 # Example file showing a circle moving on screen
 import pygame
+import random
 
 # pygame setup
 pygame.init()
 screen = pygame.display.set_mode((1280, 720))
 screen_width, screen_height = pygame.display.get_surface().get_size()
+color_list=["red", "black", "white", "green", "purple", "yellow", "pink", "blue"]
+screen_color = random.choice(color_list)
+
 clock = pygame.time.Clock()
 running = True
 dt = 0
