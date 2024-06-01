@@ -11,7 +11,7 @@ dt = 0
 
 
 player_pos = pygame.Vector2(screen.get_width() / 2, screen.get_height() / 2)
-toolbar = Toolbar(1280, 80)
+
 
 while running:
     # poll for events
@@ -24,8 +24,7 @@ while running:
     screen.fill("blue")
 
     pygame.draw.circle(screen, "red", player_pos, 40)
-    toolbar.update()
-    toolbar.draw(screen)
+
 
     keys = pygame.key.get_pressed()
     if keys[pygame.K_w]:
